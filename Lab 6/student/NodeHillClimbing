@@ -1,0 +1,25 @@
+public class NodeHillClimbing {
+	public Node execute(Node initialState) {
+		Node current = initialState;
+		Next neighbor = null;
+		while(true) {
+			neighbor = current.getBestCandidate(); //H
+			if(current.getH() > neighbor.getH())
+		}
+		return actualState;
+		
+	}
+
+}
+
+public Node executeHillClimbingWithRandomRestart(Node Start) {
+		Node state = execute(Start);
+		while (state.getH()!=0) {
+			state = new Node();
+			state.generateBoard();
+		
+			state = execute(state);
+		}
+		return state;
+	}
+}
